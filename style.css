@@ -60,13 +60,16 @@ body {
 }
 
 .logo {
-  font-family: "caslonian-std-l", serif;
-  font-size: 30px;
-  font-weight: 400;
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1002;
+}
 
-  color: #FFFFFF;
-  text-decoration: none;
+.logo img {
+  display: block;
+  width: 90px;
+  height: auto;
 }
 
 .nav-links {
