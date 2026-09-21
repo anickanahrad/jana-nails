@@ -1863,3 +1863,177 @@ body.menu-open {
   }
 
 }
+
+/* =========================
+   PRIVACY PAGE
+========================= */
+
+.privacy-page {
+  min-height: 100vh;
+
+  padding: 80px 5vw 120px;
+
+  background: #FCFAF9;
+}
+
+.privacy-inner {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.privacy-back {
+  display: inline-block;
+
+  margin-bottom: 80px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #524447;
+
+  transition: 0.25s ease;
+}
+
+.privacy-back:hover {
+  color: #C5A39B;
+}
+
+
+/* HEADING */
+
+.privacy-page h1 {
+  max-width: 760px;
+
+  margin-top: 14px;
+
+  font-family: "deuterium-variable", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 110%;
+
+  color: #231B1D;
+}
+
+.privacy-page h1 span {
+  font-family: "caslonian-std-l", serif;
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+/* CONTENT */
+
+.privacy-content {
+  max-width: 760px;
+
+  margin-top: 72px;
+}
+
+.privacy-content section + section {
+  margin-top: 48px;
+}
+
+.privacy-content h2 {
+  margin-bottom: 16px;
+
+  font-family: "deuterium-variable", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 130%;
+
+  color: #231B1D;
+}
+
+.privacy-content p {
+  font-family: "deuterium-variable", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+
+  color: #524447;
+}
+
+.privacy-content p + p {
+  margin-top: 16px;
+}
+
+.privacy-content strong {
+  font-weight: 400;
+
+  color: #231B1D;
+}
+
+/* MOBILE MENU - HIDDEN ON DESKTOP */
+
+.mobile-menu {
+  display: flex;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100dvh;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 100px 32px 50px;
+
+  background: #C5A39B;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-15px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+
+  z-index: 1001;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .privacy-page {
+    padding: 40px 20px 80px;
+  }
+
+  .privacy-back {
+    margin-bottom: 64px;
+  }
+
+  .privacy-page h1 {
+    font-size: 38px;
+  }
+
+  .privacy-content {
+    margin-top: 56px;
+  }
+
+  .privacy-content section + section {
+    margin-top: 40px;
+  }
+
+  .privacy-content h2 {
+    font-size: 20px;
+  }
+
+  .privacy-content p {
+    font-size: 15px;
+  }
+
+}
